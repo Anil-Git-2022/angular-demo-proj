@@ -1,0 +1,12 @@
+<!-- <app-header></app-header> -->
+<div class="card text-center">
+    <div class="card-body">
+  
+<!-- <app-post [post] = "listofPosts[0]"></app-post>
+
+<app-post [post] = "listofPosts[1]"></app-post>
+<app-post [post] = "listofPosts[2]"></app-post>
+<app-post [post] = "listofPosts[3]"></app-post> -->
+<app-post *ngFor = "let post of listofPosts; let i = index" [post] = "post" [index]="i"></app-post>
+</div>
+</div>

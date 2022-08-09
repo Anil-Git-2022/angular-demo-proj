@@ -1,0 +1,19 @@
+<h3>Post Edit</h3>
+<form [formGroup] = "form" (ngSubmit) = "OnSubmit()">
+    <div class="form-group">
+      <label for="exampleInputEmail1">Title</label>
+      <input type="text" class="form-control" id="exampleInputEmail1" formControlName="title" aria-describedby="emailHelp" placeholder="Title">
+    </div>
+    <div class="form-group">
+      <label for="exampleInputPassword1">Description</label>
+      <input type="text" class="form-control" id="exampleInputPassword1" formControlName="description" placeholder="Description">
+    </div>
+    <div class="form-group">
+        <label for="exampleInputPassword1">Image Path</label>
+        <input type="text" class="form-control" id="exampleInputPassword1" formControlName="imagepath" placeholder="Image Path">
+        <img src = "{{form.value.imagepath}}">
+    </div>
+    <button type="submit" class="btn btn-success" [disabled] = "form.invalid">Submit</button>|
+    <button type="reset" class="btn btn-primary">Clear</button>
+  </form>
+

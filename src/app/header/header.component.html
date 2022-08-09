@@ -1,0 +1,13 @@
+<nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="#">{{ title }}</a>
+      </div>
+      <ul class="nav navbar-nav">
+        <li [routerLinkActive]="['is-active']"><a routerLink = "/post-list">Post List</a></li>
+        <li [routerLinkActive]="['is-active']"><a routerLink = "/post-form">Add Post</a></li>
+        <!-- <li [routerLinkActive]="['is-active']"><a routerLink = "/post-edit">Post Edit</a></li> -->
+        <li [routerLinkActive]="['is-active']"><a routerLink = "/show-get-response"><span class="glyphicon glyphicon-user"></span>Sample Api Response</a></li>
+      </ul>
+    </div>
+  </nav>

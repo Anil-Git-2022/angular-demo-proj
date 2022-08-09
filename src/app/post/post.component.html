@@ -1,0 +1,14 @@
+<div class="col-md-12">
+    <div class="form-group mt-4">
+        <h1>{{post?.title | uppercase}}</h1>
+    </div>
+    <div class="form-group mt-4">
+        <p>{{post?.description}}</p>
+    </div>
+    <div class="form-group mt-4">
+        <img src="{{post?.image_path}}" width="500px" height="500px">
+    </div>
+    <div class="form-group mt-4">
+        <button class="btn btn-primary" (click)="OnEdit()">Edit</button>|<button class="btn btn-danger" (click)="OnDelete()">Delete</button>
+    </div>
+</div>
